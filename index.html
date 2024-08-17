@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.Grade">
+
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <p hidden>Yan Yan Ji</p>
+
+    <title>Swansea Univerisity - Degree Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Swansea University Degree Classification Calculator (Unofficial)</h2>
+        <p> 
+            This is a personal project of a Computer Science student alumni from Swansea University. 
+            The website aim is to calculate predicted general Degree Classification of BSc, MSci Computer Science 
+            and other degrees if possible according to the information from a Swansea University website about 
+            calculating degree classification. The link of the website that the calculation is based on: 
+        </p>
+        <p>
+            <a href="https://myuni.swansea.ac.uk/academic-life/academic-regulations/undergraduate-award-regulations/ug-assessment-regs/ug-assessment-regs-section-3/" 
+            alt="MyUniHub - Swansea University - Degree Classification">
+            https://myuni.swansea.ac.uk/academic-life/academic-regulations/undergraduate-award-regulations/ug-assessment-regs/ug-assessment-regs-section-3/
+            </a>
+        </p>   
+        <p>
+            The calculator was tested on 3 Year Initial Degree with real grades from Computer Science student. 
+            The deviation was about 1% from actual grades given by the University as a final Degree Classification. 
+            However, I do not guarantee the deviation and accuracy of the calculator as the testing sample was limited.  
+        </p>
+
+        <h5><u>!!!DISCLAIMER: I do not guarantee the accuracy of the calculator!!!</u><h5>
+
+        <h3>How it exactly works</h3>
+        
+           <ol>
+            <li>Choose which type of course have you taken.</li>
+            <li>Input the data of your grades and respective credits for modules</li>
+            <li>S is a text field for a gap year grade</li>
+            <li>Click on button CALCULATE</li>
+            <li>See the result under the button</li>
+           </ol> 
+        <p>
+           You can put your grades up until now to calculate the current average grade. 
+           This calculator was to be as universal as possible in mind. 
+           <br>
+           <u>If you want to contact me directly and have a chit chat with me, you will need to find me on Discord :D.</u>
+        </p>
+    </div>
+    <div id="container">
+        <div id="selection">
+            <h4>Choose a course</h4>
+            <ul>
+                <li><input type="radio" id="0" name="choice" checked>3 Initial Degree</li>
+                <li><input type="radio" id="1" name="choice">4 Initial Degree include a Year Abroad/In Industry</li>
+                <li><input type="radio" id="2" name="choice">4 Advanced Initial Degree</li>
+                <li><input type="radio" id="3" name="choice">5 Advanced Initial Degree include a Year Abroad/In Industry</li>
+            </ul>
+        </div>
+        <div id="calculator">
+            <h4>Calculator</h4>
+            <table>
+                <tr>
+                    <th>No.</th>
+                    <th>Year 2</th>
+                    <th>Year 3</th>
+                    <th>Year 4</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <input id="module1Y2" type="text" placeholder="Grade">
+                        <input id="credit1Y2" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module1Y3" type="text" placeholder="Grade">
+                        <input id="credit1Y3" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module1Y4" type="text" placeholder="Grade">
+                        <input id="credit1Y4" type="text" placeholder="Credit">
+                    </td>
+                </tr> 
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <input id="module2Y2" type="text" placeholder="Grade">
+                        <input id="credit2Y2" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module2Y3" type="text" placeholder="Grade">
+                        <input id="credit2Y3" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module2Y4" type="text" placeholder="Grade">
+                        <input id="credit2Y4" type="text" placeholder="Credit">
+                    </td>
+                </tr> 
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <input id="module3Y2" type="text" placeholder="Grade">
+                        <input id="credit3Y2" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module3Y3" type="text" placeholder="Grade">
+                        <input id="credit3Y3" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module3Y4" type="text" placeholder="Grade">
+                        <input id="credit3Y4" type="text" placeholder="Credit">
+                    </td>
+                </tr> 
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <input id="module4Y2" type="text" placeholder="Grade">
+                        <input id="credit4Y2" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module4Y3" type="text" placeholder="Grade">
+                        <input id="credit4Y3" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module4Y4" type="text" placeholder="Grade">
+                        <input id="credit4Y4" type="text" placeholder="Credit">
+                    </td>
+                </tr> 
+                <tr>
+                    <td>5</td>
+                    <td>
+                        <input id="module5Y2" type="text" placeholder="Grade">
+                        <input id="credit5Y2" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module5Y3" type="text" placeholder="Grade">
+                        <input id="credit5Y3" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module5Y4" type="text" placeholder="Grade">
+                        <input id="credit5Y4" type="text" placeholder="Credit">
+                    </td>
+                </tr> 
+                <tr>
+                    <td>6</td>
+                    <td>
+                        <input id="module6Y2" type="text" placeholder="Grade">
+                        <input id="credit6Y2" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module6Y3" type="text" placeholder="Grade">
+                        <input id="credit6Y3" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module6Y4" type="text" placeholder="Grade">
+                        <input id="credit6Y4" type="text" placeholder="Credit">
+                    </td>
+                </tr> 
+                <tr>
+                    <td>7</td>
+                    <td>
+                        <input id="module7Y2" type="text" placeholder="Grade">
+                        <input id="credit7Y2" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module7Y3" type="text" placeholder="Grade">
+                        <input id="credit7Y3" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module7Y4" type="text" placeholder="Grade">
+                        <input id="credit7Y4" type="text" placeholder="Credit">
+                    </td>
+                </tr> 
+                <tr>
+                    <td>8</td>
+                    <td>
+                        <input id="module8Y2" type="text" placeholder="Grade">
+                        <input id="credit8Y2" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module8Y3" type="text" placeholder="Grade">
+                        <input id="credit8Y3" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module8Y4" type="text" placeholder="Grade">
+                        <input id="credit8Y4" type="text" placeholder="Credit">
+                    </td>
+                </tr>  
+                <tr>
+                    <td>9</td>
+                    <td>
+                        <input id="module9Y2" type="text" placeholder="Grade">
+                        <input id="credit9Y2" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module9Y3" type="text" placeholder="Grade">
+                        <input id="credit9Y3" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module9Y4" type="text" placeholder="Grade">
+                        <input id="credit9Y4" type="text" placeholder="Credit">
+                    </td>
+                </tr> 
+                <tr>
+                    <td>10</td>
+                    <td>
+                        <input id="module10Y2" type="text" placeholder="Grade">
+                        <input id="credit10Y2" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module10Y3" type="text" placeholder="Grade">
+                        <input id="credit10Y3" type="text" placeholder="Credit">
+                    </td>
+                    <td>
+                        <input id="module10Y4" type="text" placeholder="Grade">
+                        <input id="credit10Y4" type="text" placeholder="Credit">
+                    </td>
+                </tr> 
+                <tr>
+                    <td>S</td>
+                    <td>
+                        <input id="gapGrade" type="text" placeholder="Grade">
+                    </td>
+                </tr>          
+            </table>
+            <button id="submit" onclick="calculateFinalDegree()">Calculate</button>
+            <!-- <input type="text" id="result" readonly> -->
+            <p id="result"></p>
+        </div>
+    </div>
+    
+</body>
+</html>
